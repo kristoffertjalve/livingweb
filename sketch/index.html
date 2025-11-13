@@ -8,6 +8,7 @@
     <style>
         html {
             font-size: 25px;
+            line-height: 1.2;
             padding: 20px;
         }
         .narrow {
@@ -25,6 +26,9 @@
             list-style-type: none;
             padding-left: 20px;
         }
+        ul#humans li {
+            margin-bottom: 5px;
+        }
         ul#humans img {
             max-height: 20px;
             width: 20px;
@@ -34,6 +38,10 @@
         }
         .table-responsive {
             overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .table-responsive table {
+            min-width: 700px;
         }
         table {
             width: 100%;
@@ -107,13 +115,14 @@
         <br>
     
         <div class="wide">
-            <table>
+            <div class="table-responsive">
+                <table>
                 <thead>
                     <tr>
                         <th scope="col">Site</th>
                         <th scope="col">Humans</th>
-                        <th scope="col">Definition</th>
-                        <th scope="col">Location</th>
+                        <th scope="col">What is it?</th>
+                        <!-- <th scope="col">Location</th> -->
                     </tr>
                 </thead>
                 <tbody>
@@ -133,7 +142,7 @@
                     <tr>
                         <td><a href="https://poeticweb.com/">poeticweb.com</a></td>
                         <td>
-                            <span class="avatar chia"></span>
+                            <span class="avatar chia" title="chia"></span>
                         </td>
                         <td>
                             <p>Poetic Web definition and various artifacts.</p>
@@ -143,7 +152,7 @@
                     <tr>
                         <td><a href="https://birdcall.online">birdcall.online</a></td>
                         <td>
-                            <span class="avatar jisu"></span>
+                            <span class="avatar jisu" title="jisu"></span>
                         </td>
                         <td>
                             <p>Birdcall primarily functions as a study and occasionally as a classroom. The study focuses on art and design, but also collects materials on science, cooking, and children's literature. The classroom offers programs for all ages and disciplines, encouraging thoughtful exchange and hands-on learning.</p>
@@ -153,7 +162,7 @@
                     <tr>
                         <td><a href="https://naiveweekly.com">naiveweekly.com</a></td>
                         <td>
-                            <span class="avatar kristoffer"></span>
+                            <span class="avatar kristoffer" title="kristoffer"></span>
                         </td>
                         <td>
                             <p>A Sunday email with links to the quiet, odd and poetic web.</p>
@@ -163,15 +172,37 @@
                     <tr>
                         <td><a href="https://naiveyearly.com">naiveyearly.com</a></td>
                         <td>
-                            <span class="avatar kristoffer"></span>
+                            <span class="avatar kristoffer" title="kristoffer"></span>
                         </td>
                         <td>
                             <p>A room for the quiet, odd & poetic web. Bringing people from different disciplines together to celebrate the web as a medium and material.</p>
                         </td>
                         <td></td>
                     </tr>
+                    <tr>
+                        <td><a href="https://html.energy">html.energy</a></td>
+                        <td>
+                            <span class="avatar elliott" title="elliott"></span>
+                            <span class="avatar" style="background-color: green;" title="laurel"></span>
+                        </td>
+                        <td>
+                            <p> HTML Energy is all around us and in this very website.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://special.fish">special.fish</a></td>
+                        <td>
+                            <span class="avatar elliott" title="elliott"></span>
+                        </td>
+                        <td>
+                            <p> Special Fish is a community word processor with light social features.</p>
+                        </td>
+                        <td></td>
+                    </tr>
                 </tbody>
-            </table>
+                </table>
+            </div>
         </div>
 
         <br><br><br><br><br>
