@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Web Institute</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            font-size: 25px;
+            padding: 20px;
+        }
+        .narrow {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .wide {
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+        img {
+            max-width: 500px;
+        }
+        ul#humans {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        ul#humans img {
+            max-height: 20px;
+            width: 20px;
+            height: 20px;
+            background-color: green;
+            border: 0;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        td p:first-child {
+            margin-top: 0;
+        }
+
+        .avatar {
+            display: inline-block   ;
+            width: 20px;
+            height: 20px;
+            border: 1px solid gray;
+        }
+        .chia {
+            background-color: rgb(0, 145, 255);
+        }
+        .elliott {
+            background-color: purple;
+        }
+        .kristoffer {
+            background-color: orange;
+        }
+        .jisu {
+            background-color: snow;
+        }
+        .matt {
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="narrow">
+            <br>
+
+            <p>
+                <b>Living Web Institute</b> is taking form, but it's mostly about viewing the web as a place made up of humans.
+            </p>
+
+            <br>
+
+            <center><img src="sketch.png" alt=""></center>
+    
+            <br><br>
+        
+            <i>The humans behind this institute...</i>
+
+            <br>
+        
+            <ul id="humans">
+                <li><span class="avatar chia"></span> Chia Amisola, <i>San Francisco</i></li>
+                <li><span class="avatar elliott"></span> Elliott Cost, <i>Rotterdam</i></li>
+                <li><span class="avatar jisu"></span> Jisu Lee, <i>Seoul</i></li>
+                <li><span class="avatar kristoffer"></span> Kristoffer Tjalve, <i>Athens</i></li>
+                <li><span class="avatar matt"></span> Matt Prebeg, <i>Toronto</i></li>
+            </ul>
+
+            <br>
+    
+            <br>
+        </div>
+
+        <br>
+    
+        <div class="wide">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Site</th>
+                        <th scope="col">Humans</th>
+                        <th scope="col">Definition</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://internetphonebook.net">internetphonebook.net</a></td>
+                        <td>
+                            <span class="avatar kristoffer"></span>
+                            <span class="avatar elliott"></span>
+                        </td>
+                        <td>
+                            <p>An annual publication for exploring the vast poetic web, featuring essays, musings and a directory with the personal websites of hundreds of designers, developers, writers, curators, and educators. Published since 2025.</p>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://poeticweb.com/">poeticweb.com</a></td>
+                        <td>
+                            <span class="avatar chia"></span>
+                        </td>
+                        <td>
+                            <p>Poetic Web definition and various artifacts.</p>
+                        </td>
+                        <td></td>
+                    </tr>                
+                    <tr>
+                        <td><a href="https://birdcall.online">birdcall.online</a></td>
+                        <td>
+                            <span class="avatar jisu"></span>
+                        </td>
+                        <td>
+                            <p>Birdcall primarily functions as a study and occasionally as a classroom. The study focuses on art and design, but also collects materials on science, cooking, and children's literature. The classroom offers programs for all ages and disciplines, encouraging thoughtful exchange and hands-on learning.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://naiveweekly.com">naiveweekly.com</a></td>
+                        <td>
+                            <span class="avatar kristoffer"></span>
+                        </td>
+                        <td>
+                            <p>A Sunday email with links to the quiet, odd and poetic web.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://naiveyearly.com">naiveyearly.com</a></td>
+                        <td>
+                            <span class="avatar kristoffer"></span>
+                        </td>
+                        <td>
+                            <p>A room for the quiet, odd & poetic web. Bringing people from different disciplines together to celebrate the web as a medium and material.</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br><br><br><br><br>
+    </main>
+
+</body>
+</html>
