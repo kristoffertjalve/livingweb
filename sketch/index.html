@@ -156,5 +156,23 @@
             <br><br><br><br>
         </div>
     </main>
+
+    <script>
+        (function () {
+            const humansListElement = document.getElementById('humans');
+            if (!humansListElement) return;
+
+            humansListElement.addEventListener('click', function (event) {
+                const eventTarget = event.target;
+                if (!(eventTarget instanceof Element)) return;
+
+                const avatarElement = eventTarget.closest('span.avatar');
+                if (!avatarElement || !humansListElement.contains(avatarElement)) return;
+
+                const avatarBackgroundColor = window.getComputedStyle(avatarElement).backgroundColor;
+                document.documentElement.style.backgroundColor = avatarBackgroundColor;
+            });
+        })();
+    </script>
 </body>
 </html>
