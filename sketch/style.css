@@ -33,6 +33,10 @@ ul#humans li {
 ul#humans li .avatar {
     cursor: pointer;
 }
+ul#humans li .avatar:hover {
+    filter: blur(2px);
+    /* transform: scale(1.1); */
+}
 ul#humans img {
     max-height: 20px;
     width: 20px;
