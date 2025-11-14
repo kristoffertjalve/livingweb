@@ -87,11 +87,29 @@ td p:first-child {
         font-size: 18px;
         line-height: 1.2;
     }
+    .table-container {
+        /* padding-right: 20px; */
+    }
     .table-responsive {
         margin: 0;
-        padding-right: 20px;
+        padding-left: 20px;
+        padding-right: 0;
+        display: flex;
     }
     .table-responsive table {
-        margin: 20px;
+        margin: 0;
+        flex: 0 0 auto;
+    }
+    .table-responsive::after {
+        content: "";
+        flex: 0 0 20px;
+    }
+    .table-responsive table th:first-child,
+    .table-responsive table td:first-child {
+        max-width: 150px;
+        width: 150px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
