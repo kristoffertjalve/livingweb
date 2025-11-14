@@ -89,6 +89,7 @@ td p:first-child {
     }
     .table-responsive {
         margin: 0;
+        padding-right: 20px;
     }
     .table-responsive table {
         margin: 20px;
