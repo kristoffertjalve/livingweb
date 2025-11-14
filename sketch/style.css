@@ -30,6 +30,9 @@ ul#humans {
 ul#humans li {
     margin-bottom: 5px;
 }
+ul#humans li .avatar {
+    cursor: pointer;
+}
 ul#humans img {
     max-height: 20px;
     width: 20px;
@@ -49,9 +52,10 @@ ul#humans img {
 table {
     width: 100%;
     border-collapse: collapse;
+    background-color: snow;
 }
 th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #00000029;
     padding: 8px;
     text-align: left;
     vertical-align: top;
@@ -64,7 +68,7 @@ td p:first-child {
     display: inline-block   ;
     width: 20px;
     height: 20px;
-    border: 1px solid gray;
+    border: 1px solid #00000029;
 }
 .chia {
     background-color: rgb(0, 145, 255);
