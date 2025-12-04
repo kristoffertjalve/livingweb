@@ -1,12 +1,205 @@
+<!--
+
+Welcome to the source of the Living Web Institute's website.
+
+This website was written by hand in HTML and CSS at Extra Practice, located in Rotterdam.
+
+It was last updated on Friday, November 14, 2025.
+
+By hand,
+Elliott
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Living Web Institute</title>
-    <link rel="icon" href="/images/favicon.svg">
+    <meta name="description" content="Viewing the web as a place made up of humans.">
+    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Social -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Living Web Institute">
+    <meta name="twitter:description" content="Viewing the web as a place made up of humans.">
+    <meta name="twitter:image" content="https://livingweb.institute/sketch/images/social.png">
 </head>
 <body>
-  mail@livingweb.institute
+    <main>
+        <div class="narrow">
+            <p>
+                <b>Living Web Institute</b> is taking form, but it's mostly about viewing the web as a place made up of humans.
+            </p>
+
+            <br>
+
+            <img src="images/sketch.svg" alt="The web is made up of humans?" id="sketch">
+    
+            <br><br>
+        
+            <p><i>The humans behind this institute...</i></p>
+
+            <br>
+        
+            <ul id="humans" style="margin-top: 0;">
+                <li><span class="avatar chia" data-message="Currently viewing this website in San Francisco."></span> Chia Amisola, <i>San Francisco</i></li>
+                <li><span class="avatar elliott" data-message="Currently viewing this website in Rotterdam where the ducks are crossing the street."></span> Elliott Cost, <i>Rotterdam</i></li>
+                <li><span class="avatar jisu" data-message="Currently viewing this website in Seoul where Birdcall resides."></span> Jisu Lee, <i>Seoul</i></li>
+                <li><span class="avatar kristoffer" data-message="Currently viewing this website in Athens where bitter oranges are scattered through the streets."></span> Kristoffer Tjalve, <i>Athens</i></li>
+                <li><span class="avatar matt" data-message="Currently viewing this website in Toronto where the leaves are changing color."></span> Matt Prebeg, <i>Toronto</i></li>
+            </ul>
+
+            <br>
+    
+            <br>
+        </div>
+
+        <br>
+    
+        <div class="wide table-container">
+            <div class="table-responsive">
+                <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Site</th>
+                        <th scope="col">Humans</th>
+                        <th scope="col">What is it?</th>
+                        <!-- <th scope="col">Location</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://internetphonebook.net">internetphonebook.net</a></td>
+                        <td>
+                            <span class="avatar kristoffer" title="Kristoffer"></span>
+                            <span class="avatar elliott" title="Elliott"></span>
+                        </td>
+                        <td>
+                            <p>An annual publication for exploring the vast poetic web, featuring essays, musings and a directory with the personal websites of hundreds of designers, developers, writers, curators, and educators. Published since 2025.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://livingweb.metalabel.com/sharing-screen">livingweb.metalabel.com/sharing-screen</a></td>
+                        <td>
+                            <span class="avatar matt" title="Matt"></span>
+                            <span class="avatar kristoffer" title="Kristoffer"></span>
+                        </td>
+                        <td>
+                            <p>Sharing Screen is an internet home tour series. Each episode welcomes us to step into the landscape of a designer or artist who makes the internet blossom.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://poeticweb.com/">poeticweb.com</a></td>
+                        <td>
+                            <span class="avatar chia" title="Chia"></span>
+                        </td>
+                        <td>
+                            <p>Poetic Web definition and various artifacts.</p>
+                        </td>
+                    </tr>                
+                    <tr>
+                        <td><a href="https://birdcall.online">birdcall.online</a></td>
+                        <td>
+                            <span class="avatar jisu" title="Jisu"></span>
+                        </td>
+                        <td>
+                            <p>Birdcall primarily functions as a study and occasionally as a classroom. The study focuses on art and design, but also collects materials on science, cooking, and children's literature. The classroom offers programs for all ages and disciplines, encouraging thoughtful exchange and hands-on learning.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="http://naiveweekly.com">naiveweekly.com</a></td>
+                        <td>
+                            <span class="avatar kristoffer" title="Kristoffer"></span>
+                        </td>
+                        <td>
+                            <p>A Sunday email with links to the quiet, odd and poetic web.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://naiveyearly.com">naiveyearly.com</a></td>
+                        <td>
+                            <span class="avatar kristoffer" title="Kristoffer"></span>
+                        </td>
+                        <td>
+                            <p>A room for the quiet, odd & poetic web. Bringing people from different disciplines together to celebrate the web as a medium and material.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://html.energy">html.energy</a></td>
+                        <td>
+                            <span class="avatar elliott" title="Elliott"></span>
+                            <span class="avatar" style="background-color: green;" title="Laurel"></span>
+                        </td>
+                        <td>
+                            <p>A movement, podcast, and yearly day to celebrate HTML.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://special.fish">special.fish</a></td>
+                        <td>
+                            <span class="avatar elliott" title="Elliott"></span>
+                        </td>
+                        <td>
+                            <p>A community word processor with light social features.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://kakakompyutermoyan.com/">kakakompyutermoyan.com</a></td>
+                        <td>
+                            <span class="avatar chia" title="Chia"></span>
+                        </td>
+                        <td>
+                            <p>An anthology of websites and internet art about Filipino online identity.</p>
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="narrow">
+
+            <br><br>
+
+            <img src="images/puddle.svg" alt="">
+
+            <br><br><br><br>
+
+            <p>The Living Web Institute can be reached via email at <a href="mailto:mail@livingweb.institute">mail@livingweb.institute</a>.</p>
+
+            <br><br><br><br>
+
+            <p id="message"></p>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            const humansListElement = document.getElementById('humans');
+            if (!humansListElement) return;
+
+            humansListElement.addEventListener('click', function (event) {
+                const eventTarget = event.target;
+                if (!(eventTarget instanceof Element)) return;
+
+                const avatarElement = eventTarget.closest('span.avatar');
+                if (!avatarElement || !humansListElement.contains(avatarElement)) return;
+
+                const avatarBackgroundColor = window.getComputedStyle(avatarElement).backgroundColor;
+                document.documentElement.style.backgroundColor = avatarBackgroundColor;
+                
+                const messageElement = document.getElementById('message');
+                if (messageElement) {
+                    const avatarMessage = avatarElement.getAttribute('data-message') || '';
+                    messageElement.textContent = avatarMessage;
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
